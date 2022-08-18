@@ -15,14 +15,13 @@ public class Main {
                 maxSum = arr[i];
             }
         }
-        System.out.println("Максимальная сумма трат за день составила " + maxSum + " рублей");
-
-        int minSum = arr[0];
-        for (int i = 0; i < arr.length; i++) {
+        int minSum = 200000;
+        for (int i = arr.length - 1; i >= 0; i--) {
             if (arr[i] < minSum){
                 minSum = arr[i];
             }
         }
+        System.out.println("Максимальная сумма трат за день составила " + maxSum + " рублей");
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей");
         // Задание 3
         double midSum;
