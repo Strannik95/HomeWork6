@@ -17,22 +17,16 @@ public class Main {
         }
         System.out.println("Максимальная сумма трат за день составила " + maxSum + " рублей");
 
-        int minSum = 0;
+        int minSum = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > minSum){
+            if (arr[i] < minSum){
                 minSum = arr[i];
-                if (arr[0] == minSum){
-                    System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей");
-                    break;
-                }
             }
         }
+        System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей");
         // Задание 3
-        double midSum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            midSum += arr[i];
-        }
-        midSum = midSum / arr.length;
+        double midSum;
+        midSum = arr1 / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + midSum + " рублей ");
 
         // Задание 4
@@ -45,7 +39,6 @@ public class Main {
 
 
     }
-    int[] arr = generateRandomArray();
 
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
