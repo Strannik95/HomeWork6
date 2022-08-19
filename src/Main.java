@@ -23,10 +23,13 @@ public class Main {
         }
         System.out.println("Максимальная сумма трат за день составила " + maxSum + " рублей");
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей");
+
+
         // Задание 3
         double midSum;
-        midSum = arr1 / arr.length;
-        System.out.println("Средняя сумма трат за месяц составила " + midSum + " рублей ");
+        double arr11 = arr1;
+            midSum = arr11 / arr.length ;
+            System.out.println("Средняя сумма трат за месяц составила " + midSum + " рублей ");
 
         // Задание 4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
